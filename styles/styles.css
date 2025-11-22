@@ -1,80 +1,105 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0;
 }
 
-header {
-  background-color: #0b2340;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-nav {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-nav a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.25rem 0;
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 main {
-  max-width: 960px;
-  margin: 1.5rem auto;
+    padding: 10px;
+    grid-column: 2 / 3;
 }
 
-main h1 {
-  margin-bottom: 0.75rem;
+nav {
+    background-color: darkblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-main img {
-  float: right;
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5rem;
+    color: darkblue;
+    font-size: 1.9rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 aside {
-  max-width: 960px;
-  margin: 1.5rem auto;
-  text-align: center;
-  position: relative;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-p {
-  padding: 0.5rem 0;
-}
-
-footer {
-  max-width: 960px;
-  margin: 1.5rem auto;
-  border-top: 1px solid #000;
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
-/* Class Selectors */
-.box {
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+aside img {
+    max-width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-left: 1rem;
+}
+
+p {
+    padding: 0;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+footer {
+    margin: 1.5rem auto;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #e0e0e0;
 }

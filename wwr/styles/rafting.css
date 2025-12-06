@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
   --primary-color: #0a3d62;
   --secondary-color: #82cddd;
@@ -17,11 +18,11 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--primary-color);
   background-color: #f5f5f5;
+  color: var(--primary-color);
 }
 
-/* Center page */
+/* Center page content */
 header,
 main,
 footer {
@@ -29,7 +30,7 @@ footer {
   margin: 0 auto;
 }
 
-/* Header (Grid) */
+/* HEADER */
 header {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -42,7 +43,7 @@ header img {
   width: 80px;
 }
 
-/* Nav (Flex) */
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -56,95 +57,67 @@ header nav a {
   font-weight: bold;
 }
 
-header nav a:last-child {
-  margin-right: 0;
-}
-
-/* Hero section */
+/* HERO SECTION */
 .hero {
   position: relative;
 }
 
 .hero img {
-  display: block;
   width: 100%;
-  height: auto;
+  display: block;
 }
 
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
   text-align: center;
+  padding: 16px;
   background-color: var(--accent1-color);
   opacity: 0.9;
-  color: #000;
   font-family: var(--heading-font);
 }
 
+/* ARTICLE ON HERO */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: var(--accent2-color);
   padding: 16px;
+  background-color: var(--accent2-color);
   opacity: 0.9;
 }
 
 .hero article img {
-  float: right;
   width: 125px;
-  height: auto;
-  margin-left: 16px;
+  float: right;
+  margin-left: 15px;
 }
 
-/* Sections */
+/* SECTION HEADINGS */
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  margin: 24px 16px 8px 16px;
+  margin: 24px 0 8px 16px;
 }
 
-nav,
-p,
-section,
-article {
-  margin: 8px 16px;
-}
-
-/* History layout */
+/* HISTORY SECTION */
 .history {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 16px;
-  align-items: center;
-}
-
-.history p {
-  margin: 0;
+  margin: 24px 0;
 }
 
 .history-image img {
   width: 100%;
-  height: auto;
   border: 1px solid #999;
   padding: 4px;
   box-shadow: 0 0 10px #999;
 }
 
-.history-image figcaption {
-  font-size: 0.85rem;
-  text-align: center;
-  margin-top: 4px;
-}
-
-/* Adventures section */
-.adventures {
-  margin-top: 24px;
-}
-
+/* ADVENTURES GRID */
 .adventure-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -161,18 +134,13 @@ article {
 .adventure-grid img {
   width: 100%;
   height: auto;
-  margin-bottom: 6px;
-}
-
-.adventure-grid figcaption {
-  font-size: 0.9rem;
 }
 
 .adventure-grid figcaption span {
   font-size: 0.8rem;
 }
 
-/* Social media */
+/* SOCIAL MEDIA ICONS */
 .socialmedia a {
   text-decoration: none;
 }
@@ -182,10 +150,85 @@ article {
   margin-right: 10px;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   text-align: center;
   margin-top: 30px;
   padding: 16px;
   background-color: var(--secondary-color);
+}
+
+/* CONTACT PAGE — FORM */
+.contact-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.radio-group {
+  margin: 10px 0;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* EMPLOYEE SECTION */
+.employees {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.employee-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.employee-grid figure {
+  width: 200px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.employee-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.employee-grid figcaption {
+  margin-top: 8px;
+  font-weight: bold;
 }

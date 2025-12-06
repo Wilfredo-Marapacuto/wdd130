@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Rapids</title>
+    <meta name="description"
+        content="Contact Rapids to ask questions, make reservations, or request more information about our rafting company." />
+    <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Rapids Logo" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <section class="map-box">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531584!3d-37.816279742021785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE0LjIiRQ!5e0!3m2!1sen!2sus!4v1617042335227!5m2!1sen!2sus"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch!</h2>
+            <form>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label>Message Purpose:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-grid">
+
+                <figure>
+                    <img src="images/employee1.jpeg" alt="Employee profile 1">
+                    <figcaption>Rodolfo – Senior Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpeg" alt="Employee profile 2">
+                    <figcaption>John – Reservation Specialist</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpeg" alt="Employee profile 3">
+                    <figcaption>Ernesto– Safety Coordinator</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©2025 | Rapids | Wilfredo Marapacuto</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-square.svg" alt="Facebook icon">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
